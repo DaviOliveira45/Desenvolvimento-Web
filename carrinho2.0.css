@@ -1,0 +1,435 @@
+body {
+    background-color: rgba(9, 28, 30, 1);
+    margin-left: 0;
+}
+
+div#interface {
+    background-color: rgba(5, 20, 24, 0);
+    width: 100%;
+    color: white;
+    padding: 2%;
+    margin: -1.5% -10% auto -3.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu h1 {
+    opacity: 0;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: none;
+    position: absolute;
+    top: 15%;
+    left: 61.5%;
+    font-family: Metrophobic;
+    font-weight: 400;
+    width: 30%;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+nav#menu a:hover {
+    color: rgb(4, 218, 4);
+}
+
+header#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(1, 26, 34);
+    padding: 1%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+}
+
+img#logo {
+    position: absolute;
+    top: 0.2%;
+    left: 1.5%;
+}
+
+/* Formatação da página login */
+
+section#corpo {
+    width: 35%;
+    margin: 9.5% auto 2% auto;
+    padding: 3%;
+    font-family: Metrophobic;
+    padding-left: 8%;
+}
+
+section#corpo h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+section#corpo h5 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: 1%;
+    font-weight: 300;
+}
+
+section#corpo input#email {
+    padding: 2.7%;
+    width: 94%;
+    border-radius: 4px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+}
+
+section#corpo input#senha {
+    padding: 2.7%;
+    width: 94%;
+    border-radius: 4px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+    
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+section#corpo p#perdeusenha {
+    font-size: 0.7em;
+    text-align: left;
+    padding-left: 1.5%;
+}
+
+section#corpo a#perdeusenha {
+    text-decoration: none;
+    color: white;
+}
+
+section#corpo button#entrarbutton {
+    background-color: rgba(0, 255, 0, 0.904);
+    padding: 1.5%;
+    width: 100%;
+    margin: 5% 0.2% 5%;
+    font-family: Metrophobic;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: 2px solid rgba(0, 255, 0, 0.904);
+    border-radius: 6px;
+    transition: 0.6s;
+}
+
+section#corpo button#entrarbutton:hover {
+    background-color: rgba(9, 28, 30, 1);
+    color: rgba(0, 255, 0, 0.904);
+}
+
+section#corpo p#semconta {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+section#corpo p#registrar {
+    text-align: center;
+}
+
+section#corpo a#registrar {
+    color: rgb(10, 243, 10);
+    text-decoration: underline;
+    transition: color 0.8s;
+}
+
+section#corpo a#registrar:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Formatação do rodapé das páginas */
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid white;
+    color: white;
+    margin-left: 0;
+    margin-right: -0.6%;
+    padding: 0.5%;
+}
+
+footer#rodape p {
+    text-align: center;
+    font-family: Metrophobic;
+    font-size: 1em;
+    padding-top: 0.4%;
+}
+
+/* Formatação da página registrar */
+
+section#corporegistro {
+    width: 35%;
+    margin: 9.5% auto 2% auto;
+    padding: 3%;
+    font-family: Metrophobic;
+    padding-left: 8%;
+}
+
+section#corporegistro h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+section#corporegistro h5 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: 1%;
+    font-weight: 300;
+}
+
+section#corporegistro input {
+    padding: 2.7%;
+    width: 94%;
+    border-radius: 4px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+
+}
+
+section#corporegistro input#confirmasenha {
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
+section#corporegistro #termosuso {
+    display: none;
+}
+
+section#corporegistro #termosuso + label::before {
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.1s;
+}
+
+section#corporegistro #termosuso:checked + label::before {
+    background: rgba(0, 255, 0, 0.904) url("../_imagens/check.png") center/90% no-repeat;
+    border-color: rgba(0, 255, 0, 0.904);
+    box-shadow: 2px 2px 2px #20515f;
+}
+
+section#corporegistro .checkpersonalizado {
+    color: white;
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    padding-right: 1%;
+}
+
+section#corporegistro div#check-box {
+    width: 100%;
+    margin: 1.5% auto;
+}
+
+section#corporegistro div#check-box section#corpocheck {
+    width: 9%;
+    margin: 0;
+    float: left;
+    padding-top: 7%;
+    padding-left: 1%;
+}
+
+section#corporegistro div#check-box aside#textolateral {
+    width: 90%;
+    float: left;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+section#corporegistro div#check-box aside#textolateral a {
+    color: rgba(0, 255, 0, 0.904);
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+section#corporegistro div#check-box aside#textolateral a:hover {
+    color: white;
+}
+
+section#corporegistro div#check-box aside#textolateral p {
+    font-size: 1.2em;
+    font-family: Metrophobic;
+}
+
+section#corporegistro button#criarbutton {
+    background-color: rgba(0, 255, 0, 0.904);
+    padding: 1.5%;
+    width: 100%;
+    margin: 4% 0.2% 4%;
+    font-family: Metrophobic;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: 2px solid rgba(0, 255, 0, 0.904);
+    border-radius: 6px;
+    transition: 0.6s;
+}
+
+section#corporegistro button#criarbutton:hover {
+    background-color: rgba(9, 28, 30, 1);
+    color: rgba(0, 255, 0, 0.904);
+}
+
+section#corporegistro p#comconta {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+section#corporegistro p#login {
+    text-align: center;
+}
+
+section#corporegistro a#login {
+    color: rgb(10, 243, 10);
+    text-decoration: underline;
+    transition: color 0.8s;
+}
+
+section#corporegistro a#login:hover {
+    color: white;
+    text-decoration: none;
+}
+.carrinho{
+    width: 900px;
+    height: 1200px;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3%;
+    position: relative;
+    top: 35px;
+    z-index: 1;
+}
+.box-carrinho{
+width: 900PX;
+height: 100px;
+position: absolute;
+bottom: 85.2%;
+background-color: rgb(52, 52, 52);
+font-size: 40px;
+color: #C0C0C0;
+}
+
+.list{
+   
+    margin: 10px;
+    width: 880px;
+    height: 140px;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.img-item{
+    position: relative;
+    right: 48px;
+    width: 100px;
+    height: 100px;
+    background-color: #646464;
+
+}
+
+.name{
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(207, 207, 207);
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    border-radius: 40%;
+    
+}
+
+.box-mais-menos{
+    margin-left:350px ;
+    margin-bottom: 30px;
+   width: 20px;
+   height: 130px;
+}
+
+.button_pagamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 500px;
+    border-radius: 7%;
+    background-color: #444444;
+    color: aliceblue;
+    border-color: #272727;
+    font-size: 20PX;
+}
