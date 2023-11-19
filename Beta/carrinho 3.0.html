@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Gamer Shop</title>
+
+    <link rel="stylesheet" href="carrinhoaux.css"/>
+    <script src="interacao.js"></script>
+</head>
+<body>
+    <div id="interface">
+
+
+        <header id="cabecalho">
+    
+        <hgroup>
+        <h1></h1>
+        <h2></h2>
+        </hgroup>
+        <!-- hgroup serve para agrupar titulos-->
+    
+        <nav id="menu">
+            <h1>Menu principal</h1>
+            <ul type="square">
+                <li><a href="">Menu</a></li>
+                <li><a href="">GSCoins</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="loginresponsivo.html">Entrar/Registrar</a></li>
+            </ul>
+        </nav>
+    
+        <img id="logo" src="G mer (200 x 112 px).png"/>
+    
+        </header>
+    <div class="voltar"> </div>
+        <section> 
+
+            <div class="box-carrinho">
+              <p style="position: relative; bottom: 20px;">CARRINHO 🛒</p>
+              
+           
+    
+            <div class="list" a href="LinkJogo">
+    
+                 <div class="img-item">
+                    <img style="height: 100px; width: 100px;" src="220px-Red_Dead_Redemption_II.jpg">
+                </div>
+
+                    
+                    <div class="name">
+                       <p> Red Dead Redemption 2</p>
+                    </div> 
+            
+                    <span class="preco" id="preco1">R$179.00</span>
+               
+    
+                        <nav class="box-mais-menos">
+                            
+                            
+                        
+                            <button type="button" class="button" onclick="aumentarQuantidade(1)">+</button>
+                            <span id="quantidade1">0</span>
+                            <button type="button" class="button" onclick="diminuirQuantidade(1)">-</button>
+      
+                        </nav>
+
+                        </div>
+
+                        <div class="list" a href="LinkJogo">
+    
+                            <div class="img-item">
+                         
+                                <img style="height: 100px; width: 100px;" src="Cyberpunk_2077_capa.png">
+               
+                           </div>
+           
+                               
+                               <div class="name">
+                                  <p> Cyber Punk 2077 </p>
+                               </div> 
+                        
+                               <span class="preco" id="preco2">R$189.90</span>
+               
+    
+                               <nav class="box-mais-menos">
+                                   
+                                   
+                               
+                                   <button type="button" class="button" onclick="aumentarQuantidade(2)">+</button>
+                                   <span  id="quantidade2"> 0</span>
+                                   <button type="button" class="button" onclick="diminuirQuantidade(2)">-</button>
+                                   
+
+                               </nav>
+                               </div>
+               
+           <div class="list" a href="">
+    
+                            <div class="img-item">
+               
+                                <img style="height: 100px; width: 100px;" src="hogwarts-legacy-cap.webp">
+
+                           </div>
+           
+                               
+                               <nav class="name">
+                                  <p>Hogwarts Legacy</p>
+                               </nav> 
+
+                               <span class="preco" id="preco3"> R$199.90 </span>
+               
+    
+                               <nav class="box-mais-menos">
+                                   
+                                   
+                               
+                                   <button type="button" class="button" onclick="aumentarQuantidade(3)">+</button>
+                                   <span id="quantidade3">0</span>
+                                   <button type="button" class="button" onclick="diminuirQuantidade(3)">-</button>
+             
+                               </nav>
+               </div>
+          
+            
+                <button class="button_pagamento"  on click a href="">
+                    Ir para o pagamento
+                </button>
+
+                <button class="calcular" onclick="calcularTotal()">Calcular Total</button>                    
+
+                <div id="resultado"></div>
+
+  <script>
+    let quantidades = [0, 0, 0];
+    let precos = [179.00, 189.90, 199.90];
+
+    function atualizarElemento(id, value) {
+      document.getElementById(id).innerText = value;
+    }
+
+    function aumentarQuantidade(index) {
+      quantidades[index - 1]++;
+      atualizarElemento(`quantidade${index}`, quantidades[index - 1]);
+    }
+
+    function diminuirQuantidade(index) {
+      if (quantidades[index - 1] > 0) {
+        quantidades[index - 1]--;
+        atualizarElemento(`quantidade${index}`, quantidades[index - 1]);
+      }
+    }
+
+    function calcularTotal() {
+      let total = 0;
+      for (let i = 0; i < 3; i++) {
+        total += quantidades[i] * precos[i];
+      }
+      atualizarElemento('resultado', `Total da compra: R$ ${total.toFixed(2)}`);
+    }
+  </script>
+
+                </div>
+</div>    
+    
+        </section>
+    
+        </div>
+    
+
+    
+</body>
+</html>
