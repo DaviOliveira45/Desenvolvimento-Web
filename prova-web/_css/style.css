@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+body {
+    background-color: rgba(9 , 28, 30, 1);
+    margin-left: 0%;
+}
+
+div#interface {
+    background-color: rgba(5, 20, 24, 0);
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin: -20px -10% auto -2.4%;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu h1 {
+    opacity: 0;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: none;
+    position: absolute;
+    top: 5px;
+    left: 850px;
+    font-family: Metrophobic;
+    font-weight: 400;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: none;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+nav#menu a:hover {
+    color: rgb(4, 218, 4);
+}
+
+header#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(1, 26, 34);
+    padding: 15px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    width: 100%;
+    align-items: center;
+}
+
+img#logo {
+    position: absolute;
+    top: 0px;
+    left: 2%;    
+}
+
+input#bntsubmenu {
+    display: none;
+}
+
+/* Formatação da página login */
+
+section#corpo {
+    width: 500px;
+    margin: 190px auto 140px auto;
+    padding-left: 40px;
+}
+
+section#corpo {
+    display: block;
+    font-family: Metrophobic;
+}
+
+section#corpo h2 {
+    font-size: 25pt;
+    margin-bottom: 0px;
+}
+
+section#corpo h5 {
+    font-size: 12pt;
+    margin-top: 0px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+section#corpo input#email {
+    padding: 15px;
+    width: 92.8%;
+    border-radius: 6px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+section#corpo input#senha {
+    padding: 15px;
+    width: 92.8%;
+    border-radius: 6px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+    
+}
+
+section#corpo p#perdeusenha {
+    font-size: 9pt;
+    text-align: left;
+}
+
+section#corpo a#perdeusenha {
+    text-decoration: none;
+    color: white;
+}
+
+section#corpo button#entrarbutton {
+    background-color: rgba(0, 255, 0, 0.904);
+    padding: 10px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: Metrophobic;
+    font-size: 15pt;
+    font-weight: 500;
+    border: 2px solid rgba(0, 255, 0, 0.904);
+    border-radius: 6px ;
+    transition: 0.6s;
+    margin-bottom: 35px;
+}
+
+section#corpo button#entrarbutton:hover {
+    background-color: rgba(9 , 28, 30, 1);
+    color: rgba(0, 255, 0, 0.904);
+
+}
+
+section#corpo p#semconta {
+    text-align: center;
+    font-size: 9pt;
+}
+
+section#corpo p#registrar {
+    text-align: center;
+}
+
+section#corpo a#registrar {
+    color: rgb(10, 243, 10);
+    text-decoration: underline;
+    transition: color 0.8s;
+}
+
+section#corpo a#registrar:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Formatação do rodapé das páginas */
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid white;
+    color: white;
+    margin-left: 0%;
+    margin-right: -0.58%;
+    padding: 5px;
+}
+
+footer#rodape p {
+    text-align: center;
+    font-family: Metrophobic;
+    font-size: 10pt;
+    padding-top: 4px;
+}
+
+/* Formatação da página registrar*/
+
+section#corporegistro {
+    width: 500px;
+    margin: 190px auto 140px auto;
+    padding-left: 60px;
+}
+
+section#corporegistro {
+    display: block;
+    font-family: Metrophobic;
+}
+
+section#corporegistro h2 {
+    font-size: 25pt;
+    margin-bottom: 0%;
+}
+
+section#corporegistro h5 {
+    font-size: 12pt;
+    margin-top: 0%;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+section#corporegistro input{
+    padding: 15px;
+    width: 92.8%;
+    border-radius: 6px;
+    background-color: #0d3840;
+    border: 2px solid #20515f;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    font-family: Metrophobic;
+    font-size: 12pt;
+    font-weight: 500;
+    outline: none;
+    caret-color: white;
+    color: white;
+
+}
+
+section#corporegistro input#confirmasenha {
+    margin-bottom: 4%;
+}
+
+section#corporegistro #termosuso {
+    display: none;
+}
+
+section#corporegistro #termosuso + label::before {
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.1s;
+}
+
+section#corporegistro #termosuso:checked + label::before {
+    background: rgba(0, 255, 0, 0.904) url("../_imagens/check.png") center/90% no-repeat;
+    border-color: rgba(0, 255, 0, 0.904);
+    box-shadow: 2px 2px 2px #20515f;
+}
+
+section#corporegistro .checkpersonalizado {
+    color: white;
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    padding-right: 10px;
+}
+
+section#corporegistro div#check-box {
+    width: 500px;
+    background-color: none;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+section#corporegistro div#check-box section#corpocheck {
+    width: 50px;
+    margin-left: 0;
+    margin-right: 0px;
+    float: left;
+    background-color: none;
+    padding-top: 38px;
+}
+
+section#corporegistro div#check-box aside#textolateral {
+    width: 410px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding-top: -5px;
+    background-color: none;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+section#corporegistro div#check-box aside#textolateral a {
+    color: rgba(0, 255, 0, 0.904);
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+section#corporegistro div#check-box aside#textolateral a:hover {
+    color: white;
+}
+
+section#corporegistro div#check-box aside#textolateral p{
+    font-size: 12pt;
+    font-family: Metrophobic;
+}
+
+section#corporegistro button#criarbutton {
+    background-color: rgba(0, 255, 0, 0.904);
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: Metrophobic;
+    font-size: 15pt;
+    font-weight: 500;
+    border: 2px solid rgba(0, 255, 0, 0.904);
+    border-radius: 6px ;
+    transition: 0.6s;
+    margin-bottom: 35px;
+}
+
+section#corporegistro button#criarbutton:hover {
+    background-color: rgba(9 , 28, 30, 1);
+    color: rgba(0, 255, 0, 0.904);
+
+}
+
+section#corporegistro p#comconta {
+    text-align: center;
+    font-size: 9pt;
+}
+
+section#corporegistro p#login {
+    text-align: center;
+}
+
+section#corporegistro a#login {
+    color: rgb(10, 243, 10);
+    text-decoration: underline;
+    transition: color 0.8s;
+}
+
+section#corporegistro a#login:hover {
+    color: white;
+    text-decoration: none;
+}

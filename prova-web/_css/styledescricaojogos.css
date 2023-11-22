@@ -1,0 +1,215 @@
+/*Formatação páginas de descrição de jogos*/
+
+section#corpodescricao {
+    width: 80%;
+    margin: 5% auto 2% auto;
+    padding: 3%;
+    font-family: Metrophobic;
+    padding-left: 8%;
+    background-color: none;
+}
+
+div.capa_preco {
+    margin-top: 0%;
+    width: 123%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    margin-left: -12.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.conteudo {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+section#capa {
+    width: 58%;
+    margin-right: 2.4%;
+    margin-left: 2%;
+    background-color: #021316e8;
+    padding: 1.8%;
+    border-radius: 20px;
+}
+
+section#capa div#capajogo img{
+    max-width: 45%;
+    max-height: auto;
+    margin: -3.1% 0% -3.1% -3.1%;
+    border-radius: 20px 0px 0px 20px;
+    display: block;
+    float: left;
+}
+
+section#capa div#informacaoproduto {
+    display: block;
+    width: 50%;
+    margin-right: 5%;
+    float: right;
+    background-color: none;
+}
+
+section#capa div#informacaoproduto p#nomejogo {
+    font-size: 1.7em;
+    font-weight: 200;
+    margin-top: 1%;
+}
+
+section#capa div#informacaoproduto p#datalancamento {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #7c7777;
+    margin-top: -4%;
+    margin-left: 4%;
+    margin-bottom: 7%;
+}
+
+section#capa div#informacaoproduto p#categoria {
+    font-size: 1em;
+    font-weight: 200;
+    color: #7c7777;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-bottom: 7%;
+}
+
+section#capa div#informacaoproduto p#palavrafixa {
+    font-size: 0.7em;
+    font-weight: 200;
+    color: #7c7777;
+    margin-bottom: -3%;
+}
+
+section#capa div#informacaoproduto p#atvsis {
+    font-size: 1em;
+    font-weight: 200;
+    margin-left: 5%;
+
+}
+
+section#preco {
+    width: 28%;
+    background-color: #021316e8;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+section#preco div#informacaocompra p#valorpagar {
+    font-size: 1.8em;
+    font-weight: 590;
+    margin-top: 26%;
+}
+
+section#preco div#informacaocompra p#opcaopagamento {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: white;
+
+}
+
+section#preco div#informacaocompra p#opcaopagamento a {
+    color: rgba(4, 238, 74, 0.822);
+    text-decoration: underline;
+    font-weight: 200;
+    transition: color 0.9s;
+}
+
+section#preco div#informacaocompra p#opcaopagamento a:hover {
+    color: white;
+
+}
+
+section#preco div#informacaocompra button#comprar {
+    width: 90%;
+    padding: 4%;
+    font-size: 1.1em;
+    margin-top: 3.5%;
+    margin-left: 5%;
+    border-radius: 6px;
+    background-color: rgba(4, 238, 74, 0.822);
+    color: white;
+    border: 2px solid rgba(4, 238, 74, 0.822);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+section#preco div#informacaocompra button#comprar:hover {
+    background-color: rgb(3, 40, 47);
+    color: rgba(4, 238, 74, 0.822);
+
+}
+
+div.descricao-carousel {
+    margin-top: 7%;
+
+}
+
+div.descricao-img {
+    margin-top: 0%;
+    width: 123%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    margin-left: -12.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.conteudotexto-img {
+    display: flex;
+    align-items: stretch;
+    width: 110%;
+}
+
+section#textodescritivo {
+    width: 35%;
+    display: block;
+    background-color: #021316e8;
+    border-radius: 10px;
+    float: left;
+    margin-left: -11%;
+    margin-right: 5%;
+    padding: 2%;
+
+}
+
+section#textodescritivo div#texto p {
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+    text-align: justify;
+}
+
+section#textodescritivo div#texto p#titulotexto {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-left: -0.5%;
+    color: #6794a9;
+    
+}
+
+section#imagensjogo {
+    width: 60%;
+    display: block;
+    float: right;
+    padding: 4%;
+    border-radius: 10px;
+    background-color: #021316e8;
+
+}
+
+section#imagensjogo div#imagensdiversas img#imagem {
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+section#imagensjogo div#imagensdiversas {
+    width: 100%;
+}
+
+section#imagensjogo div#imagensdiversas img{
+    max-width: 100%;
+    max-height: auto;
+    margin-right: 5%;
+}
