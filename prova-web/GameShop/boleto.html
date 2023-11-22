@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto</title>
+    <link rel="stylesheet" href="boleto.css">
+    <script src="boleto.js"></script>
+</head>
+<body>
+    <div id="interface">
+
+
+        <header id="cabecalho">
+    
+        <hgroup>
+        <h1></h1>
+        <h2></h2>
+        </hgroup> <!-- hgroup serve para agrupar titulos-->
+    
+        <nav id="menu">
+            <h1>Menu principal</h1>
+            <ul type="square">
+                <li><a href="">Menu</a></li>
+                <li><a href="">GSCoins</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Perfil</a></li>
+            </ul>
+        </nav>
+    
+        <img id="logo" src="gamer.png"/>
+
+    
+        <div class="payment-form">
+            <form>
+                <label for="name">Valor:</label>
+                <div class="value"> R$ 00,00</div>
+
+                <label for="vencimento">Vencimento</label>
+                <div class="data">03/11/2023</div>
+
+                <label for="codigo">Código de pagamento</label>
+                <div class="cod">95843.43012.64201.173823.11027.0.38563.235633</div>
+
+                <button type="button" onclick="generateBoleto()">Gerar Boleto</button>
+                <button type="button" onclick="pdf()">Salvar em PDF</button>
+            </form>
+        </div>
+    
+</body>
+</html>
